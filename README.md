@@ -51,6 +51,11 @@ Application Load BalancerとEC2 Auto Scalingを使用し、アクセスの分散
 
 サービス単体ではなく、ALB、Target Group、Security Group、EC2の順に確認すると原因を切り分けやすいと分かりました。
 
+## 詳しい記録
+
+- [構築・再現手順](docs/build-guide.md)
+- [検証内容と確認項目](docs/verification-record.md)
+
 ## セキュリティ上の配慮
 
 - EC2側のHTTP通信はALB用Security Groupからのみ許可する構成を想定
